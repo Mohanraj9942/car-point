@@ -52,8 +52,8 @@
 }
 
 .homebg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url("./img/book.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("./img/carbg2.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -111,7 +111,60 @@
 .bran .right {
     width: 70%;
 }
+/* ---------------------car run img---------- */
+.carrunall{
+    width:50%;
+    /* overflow: hidden!important; */
+   
+}
+.running{
+    background-color: rgb(255, 174, 221);
 
+}
+.carrunimg{
+    animation-name: carroll;
+    animation-duration: 10s;
+    animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+}
+@keyframes carroll{
+    0%{
+        transform: translate(0%);
+    }
+    100%{
+        transform: translate(-100%);
+    }
+}
+.carrunimg div{
+    width:200px;
+    height:150px;
+    border: 8px solid white;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3)inset;
+    border-radius: 2px;
+
+}
+.carrunimg div img{
+    width:180px;
+    height:130px;
+    object-fit: contain;
+}
+.smallcar{
+    width:140px!important;
+}
+@media screen and  (max-width:600px) {
+    .carrunall{
+        width:100%;
+    }
+    @keyframes carroll{
+        0%{
+            transform: translate(0%);
+        }
+        100%{
+            transform: translate(-220%);
+        }
+    }
+}
 /* ------------------new car style-------- */
 .car1 {
     width: 300px !important;
