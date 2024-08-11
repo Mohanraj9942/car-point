@@ -5,50 +5,55 @@
 }
 
 
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar {
     width: 12px;
 }
-::-webkit-scrollbar-thumb{
-    background:var(--bg3);
+
+::-webkit-scrollbar-thumb {
+    background: var(--bg3);
     border-radius: 3px;
 
-}
-.test{
-   scrollbar-width: 40%;
-}
- 
+} */
+
+
+
 
 :root {
     --sha: 0 0 15px rgba(0, 0, 0, 0.3) !important;
     --bg: antiquewhite;
     --bg2: rgb(255, 0, 106);
     --bg3: rgb(255, 0, 76);
---bg4:rgb(255, 115, 0);
+    --bg4: rgb(255, 115, 0);
 }
-.c1{
-    color:rgb(255, 0, 76);
+
+.c1 {
+    color: rgb(255, 0, 76);
 }
-.bg4{
+
+.bg4 {
     background-color: var(--bg4);
-  
+
 }
-.bg3{
+
+.bg3 {
     background-color: var(--bg3);
- 
+
 
 }
-.bg2{
+
+.bg2 {
     background-color: var(--bg2);
- 
+
 
 }
+
 .bg {
     background-color: var(--bg);
 }
 
 .shadow {
-    box-shadow: var(--sha);
-    border-radius: 10px;
+    /* box-shadow: var(--sha); */
+    /* border-radius: 10px; */
 }
 
 .homebg {
@@ -58,6 +63,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     overflow: hidden;
+    background-attachment: fixed;
 }
 
 .navli a {
@@ -70,7 +76,8 @@
 }
 
 .navz {
-    z-index: 999;
+    z-index: 9999;
+ 
 }
 
 .homecontent {
@@ -111,60 +118,72 @@
 .bran .right {
     width: 70%;
 }
+
 /* ---------------------car run img---------- */
-.carrunall{
-    width:50%;
+.carrunall {
+    width: 80%;
     /* overflow: hidden!important; */
-   
+
 }
-.running{
+
+.running {
     background-color: rgb(255, 174, 221);
 
 }
-.carrunimg{
+
+.carrunimg {
     animation-name: carroll;
     animation-duration: 10s;
-    animation-timing-function:linear ;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-@keyframes carroll{
-    0%{
+
+@keyframes carroll {
+    0% {
         transform: translate(0%);
     }
-    100%{
+
+    100% {
         transform: translate(-100%);
     }
 }
-.carrunimg div{
-    width:200px;
-    height:150px;
+
+.carrunimg div {
+    width: 200px;
+    height: 150px;
     border: 8px solid white;
     background-color: antiquewhite;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3),0 0 10px rgba(0, 0, 0, 0.3)inset;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.3)inset;
     border-radius: 2px;
 
 }
-.carrunimg div img{
-    width:180px;
-    height:130px;
+
+.carrunimg div img {
+    width: 180px;
+    height: 130px;
     object-fit: contain;
 }
-.smallcar{
-    width:140px!important;
+
+.smallcar {
+    width: 140px !important;
 }
-@media screen and  (max-width:600px) {
-    .carrunall{
-        width:100%;
+
+@media screen and (max-width:600px) {
+    .carrunall {
+        width: 100%;
     }
-    @keyframes carroll{
-        0%{
+
+    @keyframes carroll {
+        0% {
             transform: translate(0%);
         }
-        100%{
+
+        100% {
             transform: translate(-220%);
         }
     }
 }
+
 /* ------------------new car style-------- */
 .car1 {
     width: 300px !important;
@@ -183,7 +202,7 @@
 
 @keyframes srcoll {
     from {
-      
+
         transform: scale(0.8);
 
     }
@@ -200,16 +219,17 @@
     margin-top: 80px;
 }
 
-.car1{
+.car1 {
     box-shadow: var(--sha);
 }
 
 /* -----------------services------------ */
-.sha{
+.sha {
     box-shadow: var(--sha);
 }
-.radi img{
-    border-radius: 10px!important;
+
+.radi img {
+    border-radius: 10px !important;
 }
 
 
@@ -218,27 +238,28 @@
     .serviceimg {
         width: 70% !important;
     }
-    
+
 }
 
 
 @media screen and (max-width:770px) {
-    .disnone1{
+    .disnone1 {
         display: none;
     }
 }
 
 
 /* -------------client testimonial------------ */
-.test1{
-    width:300px;
+.test1 {
+    width: 300px;
 }
-.testimonial{
+
+.testimonial {
     background-color: rgb(207, 240, 255);
 }
 
 
-.footer{
+.footer {
     background-image: url("./img/Untitled\ design\ \(2\).png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -247,3 +268,51 @@
 
 
 }
+
+
+
+/* ------------about-------------- */
+.about {
+    min-height: 50vh;
+    background-image:
+        url("./img/carv1.gif");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.abouttext {
+    padding-top: 120px !important;
+    background-image:
+    url("./img/white\ tiles\ bg.avif");
+background-size: cover;
+/* background-position: center center; */
+background-repeat: no-repeat;
+overflow: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .about {
+
+        background-size: contain;
+        min-height: 40vh;
+
+    }
+}
+
+
+
+/* ----------------------location-------------- */
+@media screen and (max-width:575px) {
+    .locleft{
+width:100%!important;
+    }
+}
+
+
+/* -------------------newcarright-------------- */
+/* .newcarright img{
+    object-fit: fix;
+} */
