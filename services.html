@@ -26,7 +26,7 @@
 
     <!-- ----------------------nav bar-------------- -->
 
-    <div class="position-relative  w-100  navz">
+    <div class="position-fixed top-0 w-100  navz">
 
 
 
@@ -88,9 +88,9 @@
 
 
 
-<!-- ------------------------New Cars-------------- -->
+<!-- ------------------------service Cars-------------- -->
 
-<div class="newcar d-md-flex  align-items-center p-3 container mt-4">
+<div class="newcar d-md-flex  align-items-center p-3 container mt-10">
     <div class="newcarleft col-md-5 ">
         <h2 class="mb-3">Book a Service Appointment</h2>
 
@@ -100,8 +100,8 @@
 
        <div class="d-none d-md-block"> <a class="mt-4 btn btn-danger p-3 px-5 " href=""><b>BOOK CAR SERVICE <i class="fa-solid fa-car"></i></b></a></div>
     </div>
-    <div class="newcarright col-md-7">
-        <img class="object-fit-cover w-100" src="./img/hero-banner.png" alt="">
+    <div class="newcarright col-md-7 ">
+        <img class="object-fit-cover w-100 mt-4 mt-md-0" src="./img/hero-banner.png" alt="">
     </div>
 
     <div class="text-center d-md-none"> <a class="mt-4 btn btn-danger p-3 px-5" href=""><b>BOOK CAR SERVICE</b> <i class="fa-solid fa-car"></i></a></div>
@@ -114,8 +114,203 @@
 
 
 
+<!-- ---------------------------services------------- -->
 
 
+
+<div class="mt-5">
+  <h2 class="text-center mb-3">Scheduled Packages</h2>
+  <div class="d-md-flex  gap-lg-5 gap-md-3 p-3 px-lg-5">
+
+    <div class="serleft  w-50  p-2 shadow1 rounded d-flex flex-column justify-content-center px-lg-5">
+ 
+
+   <h5 class="">Service Cost Calculator</h5>
+   <form action="">
+    <input class="rounded border w-100 p-2"  type="text" list="alltype" placeholder="Select Car Name*"/>
+    <datalist class="w-50" id="alltype">
+        <option   value="BMW">
+        <option  value="Audi">
+        <option  value="Tata">
+        <option  value="Suzuki">
+          <option  value="Hyundai">
+
+
+    </datalist>  
+  
+    <input class="rounded border w-100 p-2 mt-2"  type="text" list="fueltype" placeholder="Select Fuel Type*"/>
+    <datalist class="w-50" id="fueltype">
+        <option   value="Petrol">
+        <option  value="Diesel">
+   
+
+
+    </datalist>  
+  
+
+
+    <input class="rounded border w-100 p-2 mt-2"  type="text" list="statetype" placeholder="Select State*"/>
+    <datalist class="w-50" id="statetype">
+        <option   value="Tamil Nadu">
+        <option  value="Keralam">
+   
+
+
+    </datalist>  
+
+    <input class="rounded border w-100 p-2 mt-2"  type="text" list="citytype" placeholder="Select City*"/>
+    <datalist class="w-50" id="citytype">
+        <option   value="Chennai">
+        <option  value="Coimbatore">
+          <option  value="Cheyyar">
+            <option  value="Kanchipuram">
+              <option  value="Tv Malai">
+
+
+
+    </datalist>  
+  
+
+    <div class="text-center">
+      <a href="" class="text-white mt-3 btn bg3 p-2 px-4"><b>View Price</b></a>
+    </div>
+  
+  </form>
+  </div>
+
+
+
+  <div class="serleft d-flex w-50 align-items-center border p-2 shadow1 rounded mobmargin">
+    <div class="serleftbox1 w-50 pe-1">
+     <h4 class="btn btn-primary ">Free AC Gas Top - Up</h4>
+     <h6 class="mt-2 ms-2"><b>Comprehensive Service</b></h6>
+     <ul>
+       <li>Every 20000 Kms / 1 Months</li>
+       <li>Take 8 Hours</li>
+       <li>1 Month Warranty</li>
+       <li>Includes 20 Services</li>
+     </ul>
+     <div class="ms-2 btn bg-black text-white"> Book Now</div>
+    </div>
+    <div class="serleftbox2 w-50 ">
+     <img class="w-100 rounded" src="./img/work-3.jpg" alt="">
+    </div>
+   </div>
+ 
+
+
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mt-3">
+  <div class="d-md-flex  gap-lg-5 gap-md-3 p-3 px-lg-5">
+
+    <div class="serleft d-flex w-50 align-items-center border p-2 shadow1 rounded ">
+   <div class="serleftbox1 w-50 pe-1">
+    <h4 class="btn btn-primary">Basic Service</h4>
+    <ul>
+      <li>Every 5000 Kms / 3 Months</li>
+      <li>Take 4 Hours</li>
+      <li>1 Month Warranty</li>
+      <li>Includes 9 Services</li>
+    </ul>
+    <div class="ms-2 btn bg-black text-white"> Book Now</div>
+
+   </div>
+   <div class="serleftbox2 w-50 ">
+    <img class="w-100 rounded" src="./img/work-1.jpg" alt="">
+   </div>
+  </div>
+
+
+
+  <div class="serleft d-flex w-50 align-items-center border p-2 shadow1 rounded mobmargin">
+    <div class="serleftbox1 w-50 pe-1">
+     <h4 class="btn btn-primary ">Recommended</h4>
+     <h6 class="mt-2 ms-2"><b>Standard Service</b></h6>
+     <ul>
+       <li>Every 10000 Kms / 6 Months</li>
+       <li>Take 6 Hours</li>
+       <li>1 Month Warranty</li>
+       <li>Includes 15 Services</li>
+     </ul>
+     <div class="ms-2 btn bg-black text-white"> Book Now</div>
+    </div>
+    <div class="serleftbox2 w-50 ">
+     <img class="w-100 rounded" src="./img/work-2.jpg" alt="">
+    </div>
+   </div>
+ 
+
+
+  </div>
+ </div>
+
+
+
+
+
+
+
+
+
+ <!-- -----------faq------- -->
+  <div>
+    <div class="mt-3 p-3 col-md-6">
+      <h2 class="mb-3">Frequently Asked Questions</h2>
+
+
+
+      <details class="p-2 border bg mt-4">
+        
+        <summary>Doorstep Pick-Up Available?</summary>
+        
+        <h6 class="text-success mt-3">YES - Free Doorstep Pick-Up Available.</h6>
+      </details>
+
+
+
+      <details class="p-2 border bg mt-3">
+        
+        <summary>What Type Of Oil Filter Do I Need?</summary>
+        
+        <h6 class="text-success mt-3 lh-base"> The type of filter that your vechicle needs depends on the type of oil that it needs.
+          Conventional oil needs to be changed about every 3,000 miles and only requires a conventional filter.
+          Synthetic oil, on the other hand, last much longer. It can last anywhere between 6,000 and 12,000 miles.
+        </h6>
+      </details>
+
+      
+      <details class="p-2 border bg mt-3">
+        
+        <summary>Basic Service Price?</summary>
+        
+        <h6 class="text-success mt-3"> Price: $ 2500, include Free Car Wash And Clean.</h6>
+      </details>
+    </div>
+  </div>
 
 
 
@@ -175,6 +370,21 @@
   
    
    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
    <!-- --------------footer--------------- -->
   

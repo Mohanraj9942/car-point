@@ -16,7 +16,12 @@
 } */
 
 
-
+.mt-10{
+    margin-top:100px!important;
+}
+.pt-10{
+    padding-top:130px!important;
+}
 
 :root {
     --sha: 0 0 15px rgba(0, 0, 0, 0.3) !important;
@@ -34,7 +39,10 @@
     background-color: var(--bg4);
 
 }
+.bg-black{
+    background-color: black;
 
+}
 .bg3 {
     background-color: var(--bg3);
 
@@ -51,8 +59,8 @@
     background-color: var(--bg);
 }
 
-.shadow {
-    /* box-shadow: var(--sha); */
+.shadow1 {
+    box-shadow: var(--sha);
     /* border-radius: 10px; */
 }
 
@@ -285,19 +293,18 @@
 
 .abouttext {
     padding-top: 120px !important;
-    background-image:
+    /* background-image:
     url("./img/white\ tiles\ bg.avif");
 background-size: cover;
-/* background-position: center center; */
 background-repeat: no-repeat;
-overflow: hidden;
+overflow: hidden; */
 }
 
 @media screen and (max-width:600px) {
     .about {
 
-        background-size: contain;
-        min-height: 40vh;
+        /* background-size: contain;
+        min-height: 40vh; */
 
     }
 }
@@ -312,7 +319,22 @@ width:100%!important;
 }
 
 
-/* -------------------newcarright-------------- */
-/* .newcarright img{
-    object-fit: fix;
-} */
+/* -------------------service-------------- */
+
+@media screen and (max-width:767px)  {
+
+    .serleft{
+width:100%!important;
+    }
+
+    .serleftbox2{
+        width:30%!important;
+    }
+    .serleftbox1{
+        width:70%!important;
+    }
+    .mobmargin{
+        margin-top:30px!important;
+    }
+}
+
